@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Daniel M</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Daniel M</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Daniel Profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">hello im</p>
+        <h2 class="title">Daniel Montalvo</h2>
+        <p class="section__text__p2">Software developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1">Download resume</button>
+        </div>
+        <div id="social-container">
+          <img src="./assets/linkedin.png" alt="perfil linkedIN" class="icon" />
+          <img src="./assets/github.png" alt="perfil gitguh" class="icon" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to Know more...</p>
+      <h1 class="title">About me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="pic about"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="icon" class="icon" />
+                <h3>Experience</h3>
+                <p>2+ year <br/>Software developer </p>
+            </div>
+            <div class="details-container">
+                <img src="./assets/education.png" alt="icon" class="icon" />
+                <h3>education</h3>
+                <p>Bachelos Degree <br/>master degree </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit dolor accusamus, esse porro modi repellendus debitis provident, quaerat qui ullam, voluptas dolorum deserunt recusandae sequi sunt hic. Sed eius voluptatibus maiores? Quasi ratione vero, fugit distinctio quo doloremque vitae asperiores veritatis voluptas itaque error ipsa impedit quisquam quas perferendis.    </p>
+          </div>
+        </div>
+      </div>
+      <img src="assets/arrow.png" alt="icon" class="icon arrow" onclick="location.href='./experience'">
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
