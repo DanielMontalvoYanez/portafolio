@@ -7,7 +7,7 @@ padding: 0;
 
 /*CSS General */
 body {
-    font-family:'Poppins', sans-serif; ;
+    font-family:'Poppins', sans-serif;
 }
 
 
@@ -318,7 +318,7 @@ article {
 
 }
 
-article .icon{
+article.icon{
     cursor: default;
 }
 
@@ -366,4 +366,24 @@ article .icon{
     background:rgb(250, 250, 250) ;
     margin:2rem auto;
     padding: 0.5rem; 
-}   
+}
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: large;
+}
+.email-icon{
+    height: 3rem;
+
+}
+
+#footer p{
+    text-align: center  ;
+}
+

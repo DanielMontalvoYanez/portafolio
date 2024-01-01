@@ -5,10 +5,13 @@ const toggleMenu =()=>{
     icon.classList.toggle("open")
 }
 
-
-
-
-
+const getDate=()=>{
+const time = new Date()
+const date = time.getFullYear()
+let parraf =    document.getElementById("111Date")
+parraf.innerHTML += `CopyRight &#169; ${date} Daniel Montalvo Rights Reserved.<br/>`;
+}
+getDate()
 
 
 
