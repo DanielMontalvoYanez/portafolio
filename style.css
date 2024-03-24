@@ -10,14 +10,8 @@ body {
     font-family:'Poppins', sans-serif;
 }
 
-
- html{
-    scroll-behavior: smooth;
- }
-
 p{
-    color: rgba(85,85,85);
-
+    color: rgba(85,85,85)
 } 
 /* Transition */
 
@@ -172,9 +166,7 @@ section{
     align-self: center;
     text-align: center;
 }
-.section__text p {
-    font-weight: 600;
-}
+
 
 .section__text__p1 {
     text-align: center;
@@ -185,10 +177,29 @@ section{
     margin-bottom: 1rem;
 }
 .title{
+font-size:4rem;
+text-align: center;
+}
+.animate-title{
     font-size: 3rem;
     text-align: center;
+    letter-spacing:1px;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right:5px solid; 
+    animation:
+	 typing 4s forwards,
+	 cursor .8s step-end infinite alternate;
 }
 
+@keyframes cursor{
+	50% { border-color: transparent }
+}
+
+@keyframes typing {
+ 	from { width:0 }
+}
 #social-container{
     display: flex;
     justify-content: center;
