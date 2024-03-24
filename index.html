@@ -3,24 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my portafolio</title>
+    <title>my resume</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+<header>
     <nav id="desktop-nav">
-      <div class="logo">Daniel M</div>
+      <div class="logo">Logo</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Daniel M</div>
+      <div class="logo">Logo</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -29,20 +30,21 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+</header/>
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Daniel Profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">hello im</p>
-        <h2 class="title">Daniel Montalvo</h2>
-        <p class="section__text__p2">Software developer</p>
+        <!-- <p class="section__text__p1">greetings</p> -->
+        <h2 class="title">Software developer</h2>
+        <p class="section__text__p2">Daniel Montalvo.</p>
         <div class="btn-container">
           <button class="btn btn-color-1">Download resume</button>
         </div>
@@ -81,7 +83,6 @@
           </div>
         </div>
       </div>
-      <img src="assets/arrow.png" alt="icon" class="icon arrow" onclick="location.href='./#Experience'">
     </section>
     <section id="experience">
         <p class="section__text__p1">Explore more</p>
@@ -145,7 +146,6 @@
                 </div> 
             </div>
         </div>
-          <img src="assets/arrow.png" alt="icon" class="icon arrow" onclick="location.href='./#Projects'">
     </section>
     <section id="projects">
       <p class="section__text__p1">recent projets...</p>
