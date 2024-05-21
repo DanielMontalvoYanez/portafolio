@@ -1,8 +1,8 @@
-/*this is a comment*/
+
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 *{
 margin:0 ;
-padding: 0;
+padding: 0, auto;
 }
 
 /*CSS General */
@@ -151,8 +151,9 @@ section{
 /*profile */
 #profile{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 5rem;
+    gap: 1rem;
     height: 80vh;
 }
 .section__pic-container{
@@ -161,8 +162,20 @@ section{
     width: 400px;
     margin: auto 0;
 }
-
-.section__text{
+.section__pic-container > .profileimg{
+	display:flex;
+	align-items:center;
+	overflow:hidden;
+	justify-content:center;
+	border-radius:50%;
+	width:100%;
+	height:100%
+}
+.section__pic-container >.profileimg >img{
+	width:480px;
+	height:560px;
+}
+.section__text{			
     align-self: center;
     text-align: center;
 }
@@ -180,13 +193,15 @@ section{
 font-size:4rem;
 text-align: center;
 }
+
+
 .animate-title{
     font-size: 3rem;
     text-align: center;
     letter-spacing:1px;
-    width:100%;
-    white-space: nowrap;
-    overflow: hidden;
+    width:100%; 
+    white-space:nowrap;
+    overflow:hidden;
     border-right:5px solid; 
     animation:
 	 typing 4s forwards,
